@@ -1,0 +1,48 @@
+\documentclass[fontsize=8pt]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol} % for multicols environment
+\usepackage{mathtools} % loads amsmath, for math environments etc
+\usepackage{geometry} % for defining margins etc
+\usepackage{tabularx}% http://ctan.org/pkg/tabularx
+\usepackage{makecell}
+\usepackage{cancel}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\renewcommand\tabularxcolumn[1]{m{#1}}
+\geometry{
+ margin=0.7cm
+}
+
+\newcommand{\mysection}[1]{
+    \setlength\fboxsep{4pt} %% spacing around box contents
+    \section*{\colorbox{black}{\makebox[\linewidth][l]{\color{white}#1\hfill}}}
+}
+
+\definecolor{light-gray}{gray}{0.95}
+% put color to \boxed math command
+\newcommand*{\boxcolor}{light-gray}
+\makeatletter
+\renewcommand{\boxed}[1]{
+    \textcolor{\boxcolor}{%
+        \tikz[baseline={([yshift=-1ex]current bounding box.center)}]
+        \node [fill=light-gray, minimum width=1ex,draw]
+        {\normalcolor\m@th$\displaystyle#1$};
+    }
+}
+ \makeatother
+\allowdisplaybreaks % allow environments like gather and align to break across columns/pages
+\begin{document}
+
+\mysection{TEORIA DELL'IMPRESA}
+
+\mysection{TEORIE FINANZIARIE}
+
+\mysection{CORPORATE GOVERNANCE}
+
+\mysection{GOVERNANCE}
+
+\end{document}
