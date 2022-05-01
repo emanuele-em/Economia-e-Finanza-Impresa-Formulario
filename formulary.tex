@@ -81,62 +81,442 @@
 
 \subsection{Capitalismo manageriale}
 
-\subsubsection{Novitá rispetto alla teoria neoclassica d'impresa}
+  \subsubsection{Novitá rispetto alla teoria neoclassica d'impresa}
 
-\subsubsection{Separazione tra proprietá e controllo}
+  \subsubsection{Separazione tra proprietá e controllo}
 
-\subsubsection{Modello di R. Marris}
+  \subsubsection{Modello di R. Marris}
+
+  \begin{definitions*}
+      g_d & tasso di crescita della domanda\\
+      d_s & tasso di diversificazione con successo\\
+      P & tasso di profitto\\
+      \pi & profitto\\
+      K & Capitale investito\\
+      g_d & $ f(d_s) $\\
+      d_s & $ f(P) $\\
+      P & $ \frac{\pi}{K} $\\
+      P & $ f(g_d) $\\
+      g_s & tasso di crescita dell'offerta = $ \frac{\Delta K}{K} = \frac{I}{K} $\\
+      \rho & tasso di reinvestimento\\
+      \epsilon & tasso di aumento del debito\\
+      I & investimenti = impieghi\\
+      \rho\pi & fonti interne, profitto reinvestiti \\
+      \epsilon I & fonti esterne, aumenti di capitale di debito
+  \end{definitions*}
+
+  \begin{align*}
+      I &= \rho\pi + \epsilon I \\
+      \pi &= \left[ \frac{1-\epsilon}{\rho} \right] I \\
+      P &= \frac{\pi}{K} = \underbrace{\frac{1-\epsilon}{\rho}}_{\beta}\underbrace{I \frac{1}{K}}_{g_s} = \beta g_s
+  \end{align*}
+
+  \subsubsection{La funzione di utilitá del manager}
+
+  \begin{definitions*}
+      V & Tasso di valutazione / valuation ratio\\
+      V_m & Valore di mercato\\
+      \pi_0 & profitto al tempo \(t_0\)\\
+      g & tasso di crescita\\
+      i & tasso di interesse
+  \end{definitions*}
+
+  \begin{align*}
+    V_m &= \sum_{t=0}^{+\infty}(1-\rho)\phi_0\left[\frac{(1+g)^t}{(1+i)^t}\right] \overset{\text{converge a}}{\longrightarrow} (1-\rho)\pi_0\left[\frac{1+i}{1-g}\right]\\
+    V &= \frac{V_m}{K} = \left(\frac{\pi_0}{K} - \frac{\rho \pi_0}{K}\right)\left[\frac{1+i}{1-g}\right]\\
+  \end{align*}
+  dato che \(P=\frac{\pi}{K}\) e \(\rho\pi = I\) allora:
+  \begin{align*}
+      \frac{\rho \pi}{K} = \frac{I}{K} = g
+  \end{align*}
+  si ottiene
+  \begin{align*}
+      V = \left[P(g)-g\right]\frac{1+i}{1-g}
+  \end{align*}
+  per capire l'andamento di \(V\) rispetto a \(g\) e \(P(g)\) si deriva:
+  \begin{align*}
+      \frac{\partial V}{\partial g} = &\left[\frac{1+i}{(1-g)^2}\right]\left[(1-g)\frac{\partial P}{\partial g} + P-i\right] 
+      &\begin{cases}
+        \text{se } \frac{\partial P}{\partial g}>0 \rightarrow \frac{\partial V}{\partial g} > 0\\
+          \text{se } \frac{\partial P}{\partial g}<0 \rightarrow \text{prima }\frac{\partial V}{\partial g} > 0 \text{ poi }\frac{\partial V}{\partial g} = 0 \text{ poi }\frac{\partial V}{\partial g} < 0\\
+      \end{cases}
+  \end{align*}
+  
+
+
+\subsection{Approccio Principale-Agente}
+
+\subsubsection{La funzione di produzione di squadra}
 
 \begin{definitions*}
-    g_d & tasso di crescita della domanda\\
-    d_s & tasso di diversificazione con successo\\
-    P & tasso di profitto\\
-    \pi & profitto\\
-    K & Capitale investito\\
-    g_d & $ f(d_s) $\\
-    d_s & $ f(P) $\\
-    P & $ \frac{\pi}{K} $\\
-    P & $ f(g_d) $\\
-    g_s & tasso di crescita dell'offerta = $ \frac{\Delta K}{K} = \frac{I}{K} $\\
-    \rho & tasso di reinvestimento\\
-    \epsilon & tasso di aumento del debito\\
-    I & investimenti = impieghi\\
-    \rho\pi & fonti interne, profitto reinvestiti \\
-    \epsilon I & fonti esterne, aumenti di capitale di debito
+  Q & funzione di produzione di squadra = \(f(x_1,x_2)\)\\
+  \omega_1 & salario
+\end{definitions*}
+condizioni:
+\begin{itemize}
+  \item non separabili
+  \item \(\frac{\partial^2Q}{\partial x_1\partial x_2}\)
+\end{itemize}
+
+\subsubsection{Shirking e Free riding}
+
+\subsubsection{La visione contrattuale dell'impresa}
+
+\subsubsection{Vantaggi e costi di squadra}
+
+\begin{definitions*}
+  B & Benefici totali\\
+  T_e & Beneficio della squadra nel caso ottimale\\
+  \frac{T_e}{2} & Beneficio della squadra nel caso reale\\
+  C & Costi totali\\
+  C_i & Costi del singolo\\  
+  \pi & Profitto totale\\
+  \pi_i & Profitto del singolo\\ 
+  \frac{\partial\pi(e)}{\partial e} = 0 & Profitto massimizzato\\
+  e & sforzo totale\\
+  e_i & sforzo del singolo
+\end{definitions*}
+\textbf{Caso della ditta individuale - \(e^*\) sforzo ottimo}
+\begin{align*}
+  B &= b(e)\\
+  C &= c(e)\\
+  \pi(e) &= b(e)-c(e)\\
+  \frac{\partial\pi(e)}{\partial e} &= \frac{\partial b(e)}{\partial e}-\frac{\partial c(e)}{\partial e} = 0\\
+  \frac{\partial b(e)}{\partial e} &= \frac{\partial c(e)}{\partial d(e)}
+\end{align*}
+\textbf{Caso societá - \(e_i^* < e*\) sforzo del singolo minore di quello ottimo}
+\begin{align*}
+  B &= b(e_1) + b(e_2)\\
+  C_i &= c(e_1)\\
+  \pi(e_i) &=\frac{b(e_1) + b(e_2)}{2}-c(e_i)  
+\end{align*}
+Si deriva per trovare gli sforzi ottimali:
+\begin{align*}
+  \frac{\partial \pi_1}{\partial e_1} &= \frac{1}{2}\frac{\partial b(e_1)}{\partial e_1}-\frac{\partial c(e_1)}{\partial e_1} = 0\\
+  \frac{\partial \pi_2}{\partial e_2} &= \frac{1}{2}\frac{\partial b(e_2)}{\partial e_2}-\frac{\partial c(e_2)}{\partial e_2} = 0\\
+  e^p_1 &= \text{sforzo che massimizza il beneficio di 1}\\
+  e^p_2 &= \text{sforzo che massimizza il beneficio di 2}\\
+\end{align*}
+\textbf{Caso Squadra senza Free Riding - \(e_i^{T^*} > e*\) sforzo congiunto della squadra otitmo maggiore di quello ottimo}
+\begin{align*}
+  B &= T(e_1 + e_2) = T_e > b(e_1) + b(e_2)\\
+  C_i &= c(e_1)\\
+  \pi &=T(e_1 + e_2) - c(e_1) - c(e_2)
+\end{align*}
+Si deriva per trovare gli sforzi ottimali:
+\begin{align*}
+  \frac{\partial \pi}{\partial e_1} &= \frac{\partial T}{\partial e_1} - \frac{\partial c(e_1)}{\partial e_1}\\
+  \frac{\partial \pi}{\partial e_2} &= \frac{\partial T}{\partial e_2} - \frac{\partial c(e_2)}{\partial e_2}\\
+  e^{T*}_1 &= \text{sforzo che massimizza il beneficio di 1}\\
+  e^{T*}_2 &= \text{sforzo che massimizza il beneficio di 2}\\
+\end{align*}
+\textbf{Caso Squadra con Free Riding - \(e_i^T < e_i^{T^*}\) sforzo congiunto della squadra minore di quello congiunto della squadra ottimo}
+\begin{align*}
+  B &= T(e_1 + e_2) = T_e > b(e_1) + b(e_2)\\
+  C_i &= c(e_1)\\
+  \pi_i &=\frac{T(e_1 + e_2)}{2} - c(e_1)\\
+\end{align*}
+Si deriva per trovare gli sforzi ottimali:
+\begin{align*}
+  \frac{\partial \pi}{\partial e_1} &= \frac{1}{2}\frac{\partial T}{\partial e_1} - \frac{\partial c(e_1)}{\partial e_1}\\
+  \frac{\partial \pi}{\partial e_2} &= \frac{1}{2}\frac{\partial T}{\partial e_2} - \frac{\partial c(e_2)}{\partial e_2}\\
+  e^{T*}_1 &= sforzo che massimizza il beneficio di 1\\
+  e^{T*}_2 &= sforzo che massimizza il beneficio di 2\\
+\end{align*}
+
+\subsubsection{Approccio principale - agente}
+
+\subsubsection{Assicuratore e assicurato}
+
+\subsubsection{Avversione al rischio e vincoli di agente}
+
+\subsubsection{Contratto ottimo di incentivo}
+
+\begin{definitions*}
+  u & Utilità del manager = \(\sqrt{y} - (e-1)\)\\
+  y & Reddito del manager\\
+  e & Sforzo del manager\\
+  \widehat{u} & Utilità di riserva (y=0, e=0)\\
+  e^H & sforzo del manager alto = 2\\
+  e^L & sforzo del manager basso = 1\\
+  \epsilon & casualitá \\
+  G & casualitá favoervole\\
+  B & casualitá Sfavorevole\\
+  p_H & Probabilitá di successo se lo sforzo è H\\
+  p_L & Probabilitá di successo se lo sforzo è L\\
+  \pi^B & profitto in caso di B = 6\\
+  \pi^G & Profitto in caso di G = 36\\
+\end{definitions*}
+
+\textbf{Caso di piena informazione - First Best}
+
+l'impresa vale \(e^H\) e lo garantisce con uno stipendio \(y^H\) (si suppone \(e^H=2\), \(e^L=1\))
+\begin{align*}
+  u = \sqrt{y^H} - (e^H-1)\\
+\end{align*}
+si deve impostare \(y^H\) in modo che \(u> \widehat{u}\) quindi:
+\begin{align*}
+  u &= \sqrt{y^H} - (e^H-1) = \widehat{u} = 1\\
+  y^H &= \left[ \left( e^H-1 \right)+1 \right]^2\\
+  y^H &= 4
+\end{align*}
+
+L'impresa si accontenta di uno sforzo \(e^L\) ma paga solo \(y^L\) (si suppone \(e^H=2\), \(e^L=1\))
+\begin{align*}
+  u &= \sqrt{y^L} - (e^L-1) = \widehat{u} = 1\\
+  y^L &= 1
+\end{align*}
+
+profitto dell'impresa:
+\begin{align*}
+  \pi^H &= p^H\pi^G + (1-p^H)\pi^B-y^H = 22\\
+  \pi^L &= p^L\pi^G + (1-p^L)\pi^B-y^L = 15\\
+\end{align*}
+
+\textbf{Caso di asimmetria informativa}
+In questo caso lo sforzo è \(e^L\) a fronte di uno stipendio di \(y^H\):
+\begin{align*}
+  u &= \sqrt{y^H} - (e^L-1) = 2 > 1\\
+  \pi &= p^L\pi^G + (1-p^L)\pi^B-y^H = 12 < 22
+\end{align*}
+
+\textbf{Caso di Contratto Incentivante}
+\begin{itemize}
+  \item \(y^G\) se manager ottiene \(\pi^G\)
+  \item \(y^B\) se manager ottiene \(\pi^B\)
+\end{itemize}
+\begin{equation*}
+  u = \left[p^H\sqrt{y^G} + (1-p^H)\sqrt{y^B}\right] - (e^H-1)
+\end{equation*}
+Vincolo di partecipazione
+\begin{equation*}
+  u \geq \widehat{u}
+\end{equation*}
+Vincolo degli incentivi
+\begin{equation*}
+  u(e^H) \geq  u(e^L))
+\end{equation*}
+sostituendo si ottiene:
+\begin{align*}
+  y^G &= 9\\
+  y^B &= 0
+\end{align*}
+
+Il profitto del manager sará:
+\begin{align*}
+  y &= p^Hy^G + (1-p^H)y^B = 6\\
+  \pi &=  p^H\pi^G + (1-p^H)\pi^B - y = 20
+\end{align*}
+
+\subsection{Costi di transazione}
+
+\subsubsection{Caso Alcoa}
+
+\subsubsection{Transazione e Costi di transazione}
+
+\subsubsection{Organizzazione Economica Alternativa}
+
+\subsubsection{Problemi di Hold Up}
+
+\begin{definitions*}
+  A & Azienda cliente\\
+  B & Azienda Fornitore\\
+  C_B & Costi di B\\
+  C_A & Costi di A\\
+  TVB & Total Variable Costo per numero di pezzi\\
+  F & Costo dell'investimento specifico\\
+  TVP & Costo variabile di produzione di A (Escluso il prodotto B)\\
+  T & Costi addizionali se A non potesse piu usare il prodtto di B (costi di switching)\\
+  R & Ricvavi\\
+  S & Valore di recupero dell'investimento\\
+  switching & se A non può usare il prodotto di B effettua uno switching\\
 \end{definitions*}
 
 \begin{align*}
-    I &= \rho\pi + \epsilon I \\
-    \pi &= \left[ \frac{1-\epsilon}{\rho} \right] I \\
-    P &= \frac{\pi}{K} = \underbrace{\frac{1-\epsilon}{\rho}}_{\beta}\underbrace{I \frac{1}{K}}_{g_s} = \beta g_s
+  C_B &= TVB + F\\
+  C_A &= TVP + (TVB + F)
 \end{align*}
 
-\subsubsection{La funzione di utilitá del manager}
+\textbf{Surplus operativo dello scambio}
 
 \begin{align*}
-    V &= \text{Tasso di valutazione / valuation ratio} = \frac{V_m}{K}\\
-    V_m &= \text{Valore di mercato} = \sum_{t=0}^{+\infty}(1-\rho)\phi_0\left[\frac{(1+g)^t}{(1+i)^t}\right] \overset{\text{converge a}}{\longrightarrow} (1-\rho)\pi_0\left[\frac{1+i}{1-g}\right]\\
-    \pi_0 &= \text{profitto al tempo } t_0\\
-    g &= \text{tasso di crescita}\\
-    i &= \text{tasso di interesse}\\
-    V &= \frac{V_m}{K} = \left(\frac{\pi_0}{K} - \frac{\rho \pi_0}{K}\right)\left[\frac{1+i}{1-g}\right]\\
+  V &= R-TVB-TVP\\
+  \text{Quasi Rendita Appropiabile} = QR &= \text{Surplus (non switching)} - \text{Surplus (switching)}\\
+  QR_B &= F-S\\
+  QR_A &= V-F-(V-F-T) = T\\
+  QR_{Totale} &= QR_A + QR_B = F-S+T\\
+  Perdita_B &= Loss_B = F-S-1\\
+  Perdita_A &= Loss_A = T-1
 \end{align*}
-dato che \(P=\frac{\pi}{K}\) e \(\rho\pi = I\) allora:
+
+\subsubsection{Contratti}
+
+\textbf{Caso contratto completo - Benchmark con A cliente e B fornitore}, B è sicuro di ricevere il prezzo concordato:
+
+\begin{definitions*}
+  c(e) & Costi variabili, dipendono dall'investimento specifico\\
+  e & Investimento specifico\\
+  p & Prezzo, Ricavi
+\end{definitions*}
+
 \begin{align*}
-    \frac{\rho \pi}{K} = \frac{I}{K} = g
+  c_B &= c(e) + e\\
+  \pi_B &= \underbrace{p}_{ricavi}-\underbrace{c(e)-e}_{costi}\\
 \end{align*}
-si ottiene
+si massimizza il profitto:
 \begin{align*}
-    V = \left[P(g)-g\right]\frac{1+i}{1-g}
+  \frac{\partial \pi_B}{\partial e}&= - \frac{\partial c}{\partial e} - 1 = 0\\
+  \frac{\partial c}{\partial e} &= -1\\
 \end{align*}
-per capire l'andamento di \(V\) rispetto a \(g\) e \(P(g)\) si deriva:
+quindi un euro in più di investimento genera una riduzione dei costi di un euro (un euro in più di profitto)
+
+\textbf{Caso contratto incompleto}
+
+A riceve il prezzo di p \(\frac{1}{2}\) del margine di contribuzione di B:
 \begin{align*}
-    \frac{\partial V}{\partial g} = &\left[\frac{1+i}{(1-g)^2}\right]\left[(1-g)\frac{\partial P}{\partial g} + P-i\right]\\
-    \text{se } &\frac{\partial P}{\partial g}>0 \rightarrow \frac{\partial V}{\partial g} > 0\\
-    \text{se } &\frac{\partial P}{\partial g}<0 \rightarrow \text{prima }\frac{\partial V}{\partial g} > 0 \text{ poi }\frac{\partial V}{\partial g} = 0 \text{ poi }\frac{\partial V}{\partial g} < 0\\
+  mdc_B &= \text(Prezzo di vendita - costi variabili)\\
+  p^{holdUp} &= p - \frac{p-c(e)}{2}\\
+  \pi^{holdUp}_B &= \frac{p+c(e)}{2} - c(e) - e = \frac{p-c(e)}{2} - e\\
 \end{align*}
+massimizzo il profitto:
+\begin{align*}
+  \frac{\partial \pi_B}{\partial e}&= -\frac{1}{2} \frac{\partial c}{\partial e} - 1 = 0\\
+  \frac{\partial c}{\partial e}&= - 2
+\end{align*}
+
+\subsection{Approccio ai diritti di proprietá}
+
+\subsubsection{Diritti residuali di controllo}
+
+\subsubsection{Separazione Verticale VS Integrazione Verticale}
+
+\subsubsection{Modello di Grossman e Hart}
+
+\begin{definitions*}
+  A & Impresa cliente\\
+  B & Impresa fornitore\\
+  MA & Manager A\\
+  MB & Manager di B\\
+  e & Investimento specifico del fornitore B (a monte)\\
+  i & Investimento specifico del cliente A (a valle)\\
+  v & Valore del bene finale senza investimento specifico\\
+  VS & separazione verticale\\
+  DS & Downstream\\
+  US & Upstream\\
+  V(1) & Profitto congiunto del primo stadio\\
+  V(2) & Profitto congiunto del secondo stadio\\
+  s & Valore del bene intermedio senza investimento specifico\\
+  p & prezzo\\
+  \widehat{p} & prezzo di mercato
+\end{definitions*}
+
+\textbf{Caso Benchmark}
+
+\begin{align*}
+  i^*&=a^2\\
+  e^*&=\alpha^2\\
+  V(1)^*&=v-s+a^2+\alpha^2\\
+\end{align*}
+
+\textbf{Caso separazione verticale - VS}
+
+\begin{align*}
+  i^{VS}&=\frac{(a+c)^2}{4}\\
+  e^{VS} &= \frac{(\alpha + \gamma)^2}{4}\\
+  V(1)^{VS}&=v-s+\frac{(a+c)(3a-c)}{4}+\frac{(\alpha + \gamma)(3\alpha + \gamma)}{4}\\
+  p&=\widehat{p} + (a+c)\sqrt{i} - (\alpha-\gamma)\sqrt{e}
+\end{align*}
+
+\textbf{Caso Integrazione a valle - DS}
+
+\begin{align*}
+  i^{DS}&=\frac{a^2}{4}\\
+  e^{DS} &= \frac{(\alpha + \gamma)^2}{4}\\
+  V(1)^{DS}&=v-s+\frac{3a^2}{4}+\frac{(\alpha + \beta)(3\alpha - \beta)}{4}\\
+  p&=v + a\sqrt{i} - \alpha\sqrt{e} + \beta\sqrt{e}
+\end{align*}
+
+\textbf{Caso Integrazione a monte - US}
+
+\begin{align*}
+  i^{US}&=\frac{(a+b)^2}{4}\\
+  e^{US} &= \frac{\alpha^2}{4}\\
+  V(1)^{US}&=v-s+\frac{3\alpha^2}{4}+\frac{(a + b)(3a - b)}{4}\\
+  p&=v + a\sqrt{i} - \alpha\sqrt{e} + \beta\sqrt{e}
+\end{align*}
+
+Investimento \(e\) del fornitore \(B\): Benchamark > DS > VS > US
+
+Investimento \(i\) del fornitore \(A\): Benchamark > US > VS > DS
 
 \section{TEORIE FINANZIARIE}
+
+\subsection{Struttura Finanziaria}
+
+\subsubsection{Corporate governance e struttura finanziaria}
+
+\subsubsection{conflitti di interesse}
+
+\subsubsection{Metodi di finanziamento delle imprese}
+
+\subsubsection{Modello di Modigliani Miller}
+
+\begin{definitions*}
+  V & Valore dell'impresa\\
+  B & Debito dell'impresa \\
+  r/times B & oneri finanziari\\
+  p & Prezzo (valore) del diritto al profitto per l'azionista\\
+  r_{wacc} & Costo del capitale\\
+  r_s & Costo dell'equity / rendimento dell'equity (Caso levered) / ROE\\
+  r_0 & Costo dell'equity / rendimento dell'equity (Caso unlevered) / ROA\\
+  r_B & Tasso di interesse del debito / costo del debito\\
+  B & Valore del debito\\
+  S & valore dell'equity\\
+  T_c & Aliquota fiscale\\
+  EPS & Earning per Share (Guadagno per azione)
+\end{definitions*}
+
+\begin{align*}
+  V_U &= EBIT(1-T_c) = \underbrace{p(x)}_{equity}\\
+  V_L &= EBIT(1-T_c) + r_B\times B\times T_c = V_U + r_B\times B\times T_c = \underbrace{B}_{debito}+\underbrace{p(x-B(1+r))}_{equity}\\
+  ROE &= \frac{\text{Net Income}}{\text{Equity}}\\
+  ROA &= \frac{EBIT}{Assets}\\
+  EPS &= \frac{\text{Net Income}}{\text{Numero azioni}}\\
+\end{align*}
+c'è indifferenza tra la strategia equity-levered se \(V_L = V_U\):
+\begin{align*}
+  p(x) &= B + p(x-B(1+r))
+\end{align*}
+
+\textbf{Caso senza tasse e senza costi di bancarotta}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.4\linewidth]{images/1.jpg}
+\end{figure}
+
+\begin{align*}
+  V_L &= V_U\\
+  r_s &= r_0 + \frac{B}{S}\left(r_0-R_B\right)\\
+  r_{wacc} &= \frac{B}{B+S}r_B + \frac{S}{B+S}r_s
+\end{align*}
+
+\textbf{Caso con tasse e senza costi di bancarotta}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.4\linewidth]{images/2.jpg}
+\end{figure}
+
+\begin{align*}
+  V_L &= V_U + T_cB\\
+  r_s &= r_0 + \frac{B}{S}\left(1-T_c\right)\left(r_0-R_B\right)\\
+  r_{wacc} &= \frac{B}{B+S}r_B(1-T_c) + \frac{S}{B+S}r_s
+\end{align*}
+
+\textbf{Caso con tasse e con costi di bancarotta}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.4\linewidth]{images/3.jpg}
+\end{figure}
 
 \section{CORPORATE GOVERNANCE}
 
