@@ -518,6 +518,66 @@ c'è indifferenza tra la strategia equity-levered se \(V_L = V_U\):
   \includegraphics[width=.4\linewidth]{images/3.jpg}
 \end{figure}
 
+\subsection{Struttura Proprietaria}
+
+\subsubsection{Modello di Jensen e Meckling}
+
+\begin{definitions*}
+  BM & Benefici Monetari\\
+  BNM & Benefici Non Monetari\\
+  \alpha & Quota venduta dall'imprenditore agli azionisti esterni\\
+  E & Imprenditore\\
+  e & sforzo dell'imprenditore\\
+  V & Valore dell'impresa\\
+  c & Costo dello sforzo\\
+  v \geq 0; v'>0; v''<0 & Valore marginalmente decrescente\\
+  c \geq 0; c'>0; c''>0 & Costo marginalmente crescente\\
+\end{definitions*}
+
+\textbf{Caso in cui E possiede il 100\% dell'impresa - Benchmark}
+
+\begin{align*}
+  MAX U_m(e)&=MAX[v(e)-c(e)]\\
+  \frac{\partial U_m(e)}{\partial e} &= \frac{\partial V(e)}{\partial e} - \frac{\partial c(e)}{\partial e}\\
+  \frac{\partial v(e)}{\partial e} &= \frac{\partial c(e)}{\partial e}\\
+  e^* &= \text{livello di sforzo ottimale}\\
+\end{align*}
+
+\textbf{Caso in cui E vende una quota \(\alpha\) della sua impresa}
+
+\begin{align*}
+  MAX U_m(e)&=MAX[(1-\alpha)v(e)-c(e)]\\
+  \frac{\partial U_m(e)}{\partial e} &= \frac{\partial [(1-\alpha)V(e)]}{\partial e} - \frac{\partial c(e)}{\partial e}\\
+  \frac{\partial [(1-\alpha)v(e)]}{\partial e} &= \frac{\partial c(e)}{\partial e}\\
+  \widehat{e} &= \text{livello di sforzo efficiente} < e^*\\
+\end{align*}
+
+\textbf{Caso in cui E seleziona il progetto - selezione avversa}
+
+\begin{align*}
+  \text{underinvestment} \rightarrow \text{ineefficienza ex-ante}\\
+  \text{underpricing} \rightarrow \text{ineefficienza ex-post}
+\end{align*}
+
+\subsubsection{Costi di agenzia del capitale}
+
+\subsubsection{Modello di Jensen}
+
+\begin{definitions*}
+  D & Obbligazioni\\
+  r & Tasso di interesse\\
+  E & Imprenditore
+\end{definitions*}
+
+\begin{align*}
+  MAX U_m(e) &= MAX[v(e) - c(e) e D(1+r)]\\
+  \frac{\partial U_m(e)}{\partial e} &= \frac{\partial v(e)}{\partial e} - \frac{\partial c(e)}{\partial e} = 0\\
+  \frac{\partial v(e)}{\partial e}& = \frac{\partial c(e)}{\partial e}\\
+  e^* &= \text{Livello di sforzo efficiente}
+\end{align*}
+
+\subsubsection{Struttura proprietaria ottimale}
+
 \section{CORPORATE GOVERNANCE}
 
 \section{GOVERNANCE}
