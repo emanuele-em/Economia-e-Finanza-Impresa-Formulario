@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.2)  1 MAY 2022 17:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.2)  2 MAY 2022 14:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -538,7 +538,14 @@ File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \tikz@expandcount=\count312
  (c:/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-))) (c:/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+))) (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+) (c:/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
@@ -547,23 +554,23 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 ) (./formulary.aux)
 \openout1 = `formulary.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-Package scrbase Info: activating english \contentsname on input line 78.
-Package scrbase Info: activating english \listfigurename on input line 78.
-Package scrbase Info: activating english \listtablename on input line 78.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+Package scrbase Info: activating english \contentsname on input line 79.
+Package scrbase Info: activating english \listfigurename on input line 79.
+Package scrbase Info: activating english \listtablename on input line 79.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -618,42 +625,42 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (c:/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 80.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 81.
  (c:/texlive/2021/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [1
+) (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd) (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd) [1
 
 {c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5]
 <images/1.jpg, id=38, 301.125pt x 203.25937pt>
 File: images/1.jpg Graphic file (type jpg)
 <use images/1.jpg>
-Package pdftex.def Info: images/1.jpg  used on input line 494.
+Package pdftex.def Info: images/1.jpg  used on input line 495.
 (pdftex.def)             Requested size: 223.06628pt x 150.57704pt.
 <images/2.jpg, id=39, 342.5297pt x 207.02344pt>
 File: images/2.jpg Graphic file (type jpg)
 <use images/2.jpg>
-Package pdftex.def Info: images/2.jpg  used on input line 506.
+Package pdftex.def Info: images/2.jpg  used on input line 507.
 (pdftex.def)             Requested size: 223.06628pt x 134.82266pt.
  [6 <./images/1.jpg>]
 <images/3.jpg, id=43, 355.3275pt x 215.30438pt>
 File: images/3.jpg Graphic file (type jpg)
 <use images/3.jpg>
-Package pdftex.def Info: images/3.jpg  used on input line 518.
+Package pdftex.def Info: images/3.jpg  used on input line 519.
 (pdftex.def)             Requested size: 223.06628pt x 135.1661pt.
- [7 <./images/2.jpg> <./images/3.jpg>] [8] (./formulary.aux) ) 
+ [7 <./images/2.jpg> <./images/3.jpg>] [8] [9] (./formulary.aux) ) 
 Here is how much of TeX's memory you used:
- 17448 strings out of 478276
- 361015 string characters out of 5850490
- 782807 words of memory out of 5000000
- 35373 multiletter control sequences out of 15000+600000
- 479004 words of font info for 47 fonts, out of 8000000 for 9000
+ 17558 strings out of 478276
+ 362783 string characters out of 5850490
+ 783247 words of memory out of 5000000
+ 35467 multiletter control sequences out of 15000+600000
+ 480249 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  110i,16n,106p,10681b,711s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb>
-Output written on formulary.pdf (8 pages, 427027 bytes).
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb>
+Output written on formulary.pdf (9 pages, 436948 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
+ 130 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

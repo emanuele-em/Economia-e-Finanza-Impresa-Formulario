@@ -12,6 +12,7 @@
 \usepackage{xcolor}
 \usepackage{amsmath}
 \usepackage{tikz}
+\usepackage{amsfonts}
 \usetikzlibrary{calc}
 \renewcommand\tabularxcolumn[1]{m{#1}}
 \geometry{
@@ -578,6 +579,76 @@ c'è indifferenza tra la strategia equity-levered se \(V_L = V_U\):
 
 \subsubsection{Struttura proprietaria ottimale}
 
+\subsection{Impatto della quotazione}
+
+\subsubsection{Quotazione in borsa}
+
+\subsubsection{Modello di Myers e Majluf}
+
+\begin{definitions*}
+  M & Manager\\
+  w & fondi propri\\
+  k & valore del nuovo progetto\\
+  A & Valore atteso degli assets correnti\\
+  a>0 & valore ex-post della realizzazione di A\\
+  B & valore atteso del surplus del progetto\\
+  b>0 & valore ex-post della realizzazione di B\\
+  \text{assunzione } 1 & w<k (i fondi propri non sono sufficienti a finanziare il progetto)\\
+  eq = k-w & valore delle azioni da emettere\\
+  p & valore di mercato delle azioni vecchie (eq=0)\\
+  p^{eq} & valore dopo l'emissione delle azioni vecchie (eq>0)\\
+  \text(assunzione ) 2 & le nuove azioni non vengono sottoscritte da vecchi azionisti \\
+  \mathbb{E}(A|M) & valore atteso di A data la scelta di M di non emettere\\
+  \mathbb{E}(A+B|M^{eq}) & Valore atteso di A + B data la scelta di M di emettere nuove azioni\\
+  (a+w) & Valore senza progetto
+\end{definitions*}
+\textbf{Caso \(H_0\), M non emette azioni}
+\begin{align*}
+  eq&=0\\
+  v^0&=a+w\\
+  b&=0\\
+  p &= \text{Valore di mercato delle azioni in circolazione}
+\end{align*}
+\textbf{Caso \(H_1\), M emette azioni e finanzia il progetto}
+\begin{align*}
+  eq>0\\
+  v^0=a+w+b+eq
+\end{align*}
+Quota vecchi azionisti:
+\begin{equation*}
+  \frac{p^{eq}}{(p^{eq}+eq)}
+\end{equation*}
+Valore vecchie azioni:
+\begin{equation*}
+  \frac{p^{eq}}{(p^{eq}+eq)} (a+w+b+eq)
+\end{equation*}
+M emette azioni se:
+\begin{align*}
+  &\frac{p^{eq}}{(p^{eq}+eq)}(a+w+b+eq)\geq a+w \rightarrow\\
+  \rightarrow &b \geq \left(\frac{eq}{p^{eq}}\right) (a+w) - eq
+\end{align*}
+\textbf{Prezzo che azionisti sono disposti a pagare senza nuova emissione}
+\begin{align*}
+  b &< \left( \frac{eq}{p^{eq}} \right) (a+w) - eq\\
+  (a+w) &> p^{eq} \left[ 1+\frac{b}{eq} \right]\\
+  p&=w + \mathbb{E}(A|M)
+\end{align*}
+Prezzo che gli azionisti sono disposti a pagare se si emette:
+\begin{align*}
+  b &\geq \left( \frac{eq}{p^{eq}}(a+w) - eq \right)\\
+  p^{eq} &= w + \mathbb{E}(A+B|M^{eq}) 
+\end{align*}
+Confrontando i risultati:
+\begin{align*}
+  a+w &> p^{eq}\left[ 1+\frac{b}{eq} \right] \implies\\
+  \implies a+w &> p^{eq}
+\end{align*}
+In assenza del progetto si sa che \(a=\mathbb{E}(A|M)\), si sostituisce:
+\begin{align*}
+  \mathbb{E}(A|M)&>p^{eq}-w \implies\\
+  \implies p-w &> p^{eq}-w \implies\\
+  \implies p&>p^{eq}
+\end{align*}
 \section{CORPORATE GOVERNANCE}
 
 \section{GOVERNANCE}
