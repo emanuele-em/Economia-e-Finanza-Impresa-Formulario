@@ -812,12 +812,83 @@ v = \underbrace{152}_{\text{Azioni A}}+\underbrace{150}_{\text{Azioni B}}=302
 \end{minipage}
 
 R offre 303 mentre \(i\) può offrire massimo 251, R può quindi offrire anche solo 301
-\[
-v = \underbrace{301}_{\text{Azioni}}<302  
-\]
+
+\[ v = \underbrace{301}_{\text{Azioni}}<302 \]
 
 \section{CORPORATE GOVERNANCE}
+\subsection{Meccanismi di disciplina del manager}
+\subsubsection{Origine, definizione e strumenti della corporate governance}
+\subsubsection{Meccanismi esterni di corporate governance}
+\subsubsection{Meccanismi interni di corporate governace}
+\subsection{Tutela degli azionisti}
+\subsubsection{Fallimenti e scandali negli USA}
+\subsubsection{Fallimenti e scandali in Italia}
+\subsubsection{Protezione degli azionisti}
+\subsubsection{Separazione tra proprietá e controllo}
+\subsubsection{Caso studio: Pirami societarie in Italia}
+\subsection{Approccio Law And Finance}
+\subsubsection{Approccio Law and Finance}
+\subsubsection{Dati degli azionisti}
+\subsubsection{Diritti dei creditori}
+\subsubsection{Law Enforcement and Accounting Standard}
+\subsubsection{Influenza del sistema legale sulla struttura finanziaria proprietaria}
+\subsubsection{Influenza della protezione degli investitori sullo sviluppo economico}
 
-\section{GOVERNANCE}
+\section{ECONOMETRIA}
+\subsection{Introduzione all'econometria}
+\subsubsection{Natura e scopo dell'econometria}
+\subsubsection{Dati sperimentali e dati osservazionali}
+\subsubsection{Distribuzione di un modello econometrico}
+\subsubsection{Esempio di costruzione di un modello econometrico}
+\begin{definitions*}
+  Y_1 & Prima media\\
+  Y_2 & Seconda media\\
+  SE(Y_1 - Y_2) & Errore standard\\
+  SE & Standard Error\\
+  t & statistica
+\end{definitions*}
+\begin{align*}
+  t &= \frac{\overline{Y_1}-\overline{Y_2}}{SE(\overline{Y_1}-\overline{Y_2})}\\
+  SE(\overline{Y_1}-\overline{Y_2}) &= \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}\\
+  s_i^2 = \frac{1}{n_i-1}\times \sum_{j=1}^{n_i}(Y_j-\overline{Y_i})^2\\
+  \text{Intervallo di confidenza } 95\%= (\overline{Y_1}-\overline{Y_2}) \pm 1.96 \times SE(\overline{Y_1}-\overline{Y_2})\\
+  \text{Indice di correlazione } = \frac{\text{covarianza}}{(\text{varianza di X})\times (\text{varianza di Y})} 
+\end{align*}
+
+\subsection{Regressione lineare con un solo regressore}
+\begin{definitions*}
+  ESS & varaibilitá spiegata\\
+  TSS & Variabilitá totale
+\end{definitions*}
+\begin{align*}
+  Y_i=\beta_0+\beta_1X_i+u_i\\
+  \beta_1=\frac{\Delta Y}{\Delta X}\\
+  R^2=\frac{ESS}{TSS}=\frac{\sum_{i=1}^n(\widehat{Y_i}-\overline{\widehat{Y_i}})^2}{\sum_{i=1}^n(Y_i-\overline{Y_i})^2}
+\end{align*}
+\subsubsection{Il modello di regressione lineare}
+\subsubsection{Metodo dei minimi quadrati ordinari (ols)}
+\subsubsection{Misure di bontá della regressione campionaria}
+\subsubsection{Assunzioni dei minimi quadrati}
+\subsubsection{Distribuzione campionaria degli stimatori ols}
+\subsubsection{Verifica d'ipotesi e intervalli di confidenza per \(\widehat{\beta_1}\)}
+\subsubsection{La regressione quando la \(x\) è una variabile dummy}
+\subsubsection{Vantaggi e svantaggi del metodo dei minimi quadrati ordinari}
+\subsection{Regressione lineare con regressori multipli}
+\subsubsection{Distorsione da variabili omesse}
+\subsubsection{Causalitá e analisi di regressione}
+\subsubsection{Modello di regressione multipla}
+\subsubsection{Misure della bontá della regressione campionaria}
+\subsubsection{Assunzione dei minimi quadrati per la regressione multipla}
+\subsubsection{Verifica di ipotesi e intervalil di confidenza}
+\subsubsection{Specificazione della regressione: come si fa?}
+\subsection{Regressione non lineare}
+\subsubsection{Concetti generali}
+\subsubsection{Funzioni non lineari di un'unica variabile indipendente}
+\subsubsection{Funzioni non lineari a due variabili: interazioni}
+\subsection{Regressione con variabile dipendente binaria (dummy)}
+\subsubsection{Modello lineare di probabilitá}
+\subsubsection{Regressione PROBIT e LOGIT}
+\subsubsection{Metodo della massima verosimiglianza}
+\subsubsection{Applicazione ai dati Boston HMDA}
 
 \end{document}
